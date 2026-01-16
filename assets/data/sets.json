@@ -1,0 +1,1556 @@
+[
+  {
+    "code": "WD01",
+    "name": "WXD-01 White Hope",
+    "set_type": "Starter",
+    "release_date": "2014-04-26",
+    "total_cards": 18
+  },
+  {
+    "code": "WD02",
+    "name": "WXD-02 Red Ambition",
+    "set_type": "Starter",
+    "release_date": "2014-04-26",
+    "total_cards": 15
+  },
+  {
+    "code": "WD03",
+    "name": "WXD-03 Blue Appli",
+    "set_type": "Starter",
+    "release_date": "2014-04-26",
+    "total_cards": 15
+  },
+  {
+    "code": "WD04",
+    "name": "WXD-04 Green Wanna",
+    "set_type": "Starter",
+    "release_date": "2014-06-12",
+    "total_cards": 15
+  },
+  {
+    "code": "WD05",
+    "name": "WXD-05 Black Desire",
+    "set_type": "Starter",
+    "release_date": "2014-06-12",
+    "total_cards": 16
+  },
+  {
+    "code": "WD06",
+    "name": "WXD-06 Blue Request",
+    "set_type": "Starter",
+    "release_date": "2014-09-25",
+    "total_cards": 13
+  },
+  {
+    "code": "WD07",
+    "name": "WXD-07 Black Crave",
+    "set_type": "Starter",
+    "release_date": "2014-09-25",
+    "total_cards": 16
+  },
+  {
+    "code": "WD08",
+    "name": "WXD-08 Black Will",
+    "set_type": "Starter",
+    "release_date": "2015-03-28",
+    "total_cards": 15
+  },
+  {
+    "code": "WD09",
+    "name": "WXD-09 White Pray",
+    "set_type": "Starter",
+    "release_date": "2014-04-25",
+    "total_cards": 16
+  },
+  {
+    "code": "WD10",
+    "name": "WXD-10 Red Hope",
+    "set_type": "Starter",
+    "release_date": "2015-04-25",
+    "total_cards": 13
+  },
+  {
+    "code": "WD11",
+    "name": "WXD-11 Black Will",
+    "set_type": "Starter",
+    "release_date": "2015-06-20",
+    "total_cards": 16
+  },
+  {
+    "code": "WD12",
+    "name": "WXD-12 Green Dream",
+    "set_type": "Starter",
+    "release_date": "2015-11-25",
+    "total_cards": 18
+  },
+  {
+    "code": "WD13",
+    "name": "WXD-13 White Hope -movie ver.-",
+    "set_type": "Starter",
+    "release_date": "2016-02-13",
+    "total_cards": 25
+  },
+  {
+    "code": "WD14",
+    "name": "WXD-14 Black Desire -movie ver.-",
+    "set_type": "Starter",
+    "release_date": "2016-02-13",
+    "total_cards": 24
+  },
+  {
+    "code": "WD15",
+    "name": "WXD-15 Red Promise",
+    "set_type": "Starter",
+    "release_date": "2016-04-07",
+    "total_cards": 24
+  },
+  {
+    "code": "WD16",
+    "name": "WXD-16 Blue Petition",
+    "set_type": "Starter",
+    "release_date": "2016-04-07",
+    "total_cards": 23
+  },
+  {
+    "code": "WD17",
+    "name": "WXD-17 Red Honest",
+    "set_type": "Starter",
+    "release_date": "2016-10-13",
+    "total_cards": 18
+  },
+  {
+    "code": "WD18",
+    "name": "WXD-18 Green Berserk",
+    "set_type": "Starter",
+    "release_date": "2016-10-13",
+    "total_cards": 18
+  },
+  {
+    "code": "WD19",
+    "name": "WXD-19 Black Blind",
+    "set_type": "Starter",
+    "release_date": "2016-11-17",
+    "total_cards": 18
+  },
+  {
+    "code": "WD20",
+    "name": "WXD-20 Green Cunning",
+    "set_type": "Starter",
+    "release_date": "2016-12-15",
+    "total_cards": 18
+  },
+  {
+    "code": "WD21",
+    "name": "WXD-21 Red Joker",
+    "set_type": "Starter",
+    "release_date": "2017-02-23",
+    "total_cards": 20
+  },
+  {
+    "code": "WD22",
+    "name": "WXD-22 Black Conflation",
+    "set_type": "Starter",
+    "release_date": "2017-04-26",
+    "total_cards": 41
+  },
+  {
+    "code": "WD23",
+    "name": "WXD-23 Blue Conflation",
+    "set_type": "Starter",
+    "release_date": "2017-06-29",
+    "total_cards": 44
+  },
+  {
+    "code": "WDK01",
+    "name": "WXK-D01 Red Doping",
+    "set_type": "Starter",
+    "release_date": "2018-04-26",
+    "total_cards": 19
+  },
+  {
+    "code": "WDK02",
+    "name": "WXK-D02 Blue Catharsis",
+    "set_type": "Starter",
+    "release_date": "2018-04-26",
+    "total_cards": 18
+  },
+  {
+    "code": "WDK03",
+    "name": "WXK-D03 Green Tentacle",
+    "set_type": "Starter",
+    "release_date": "2018-04-26",
+    "total_cards": 17
+  },
+  {
+    "code": "WDK04",
+    "name": "WXK-D04 Black Direct",
+    "set_type": "Starter",
+    "release_date": "2018-05-24",
+    "total_cards": 17
+  },
+  {
+    "code": "WDK05",
+    "name": "WXK-D05 Dual Paleness",
+    "set_type": "Starter",
+    "release_date": "2018-06-21",
+    "total_cards": 35
+  },
+  {
+    "code": "WDK06",
+    "name": "WXK-D06 Dual Blood",
+    "set_type": "Starter",
+    "release_date": "2018-06-21",
+    "total_cards": 34
+  },
+  {
+    "code": "WDK07",
+    "name": "WXK-D07 Dual Plant",
+    "set_type": "Starter",
+    "release_date": "2018-08-25",
+    "total_cards": 34
+  },
+  {
+    "code": "WDK08",
+    "name": "WXK-D08 Dual Blast",
+    "set_type": "Starter",
+    "release_date": "2018-08-25",
+    "total_cards": 34
+  },
+  {
+    "code": "WDK09",
+    "name": "WXK-D09 Blue Umr",
+    "set_type": "Starter",
+    "release_date": "2019-04-20",
+    "total_cards": 17
+  },
+  {
+    "code": "WDK10",
+    "name": "WXK-D10 Black Urith",
+    "set_type": "Starter",
+    "release_date": "2019-04-20",
+    "total_cards": 17
+  },
+  {
+    "code": "WDK11",
+    "name": "WXK-D11 White Emma",
+    "set_type": "Starter",
+    "release_date": "2019-04-20",
+    "total_cards": 22
+  },
+  {
+    "code": "WDK12",
+    "name": "WXK-D12 Green Mel",
+    "set_type": "Starter",
+    "release_date": "2019-06-29",
+    "total_cards": 17
+  },
+  {
+    "code": "WDK13",
+    "name": "WXK-D13 Black Myu",
+    "set_type": "Starter",
+    "release_date": "2019-06-29",
+    "total_cards": 16
+  },
+  {
+    "code": "WDK14",
+    "name": "WXK-D14 Red Tawil",
+    "set_type": "Starter",
+    "release_date": "2019-08-31",
+    "total_cards": 16
+  },
+  {
+    "code": "WDK15",
+    "name": "WXK-D15 Black Nanashi",
+    "set_type": "Starter",
+    "release_date": "2019-08-31",
+    "total_cards": 16
+  },
+  {
+    "code": "WDK16",
+    "name": "WXK-D16 Nijisanji WIXOSS Battle Set",
+    "set_type": "Starter",
+    "release_date": "2019-08-31",
+    "total_cards": 34
+  },
+  {
+    "code": "WDK17",
+    "name": "WXK-D17 Black Alfou",
+    "set_type": "Starter",
+    "release_date": "2019-10-26",
+    "total_cards": 17
+  },
+  {
+    "code": "WDi-01",
+    "name": "WXDi-D01 Diva Debut Deck Ancient Surprise",
+    "set_type": "Starter",
+    "release_date": "2020-12-05",
+    "total_cards": 21
+  },
+  {
+    "code": "WDi-02",
+    "name": "WXDi-D02 Diva Debut Deck Nijisanji ver.  Sanbaka",
+    "set_type": "Starter",
+    "release_date": "2020-12-05",
+    "total_cards": 29
+  },
+  {
+    "code": "WDi-03",
+    "name": "WXDi-D03 DIVA DEBUT DECK No Limit",
+    "set_type": "Starter",
+    "release_date": "2020-01-16",
+    "total_cards": 18
+  },
+  {
+    "code": "WDi-04",
+    "name": "WXDi-D04 DIVA DEBUT DECK Card Jockey",
+    "set_type": "Starter",
+    "release_date": "2020-01-16",
+    "total_cards": 20
+  },
+  {
+    "code": "WDi-05",
+    "name": "WXDi-D05 DIVA DEBUT DECK Universe's Beginning",
+    "set_type": "Starter",
+    "release_date": "2020-01-16",
+    "total_cards": 20
+  },
+  {
+    "code": "WDi-06",
+    "name": "WXDi-D06 DIVA DEBUT DECK DIAGRAM",
+    "set_type": "Starter",
+    "release_date": "2020-01-16",
+    "total_cards": 20
+  },
+  {
+    "code": "WDi-07",
+    "name": "WXDi-D07 TOP DIVA DECK Deus Ex Machina",
+    "set_type": "Starter",
+    "release_date": "2021-06-26",
+    "total_cards": 22
+  },
+  {
+    "code": "WDi-08",
+    "name": "WXDi-D08 DIVA DEBUT DECK WHITE HOPE",
+    "set_type": "Starter",
+    "release_date": "2021-10-30",
+    "total_cards": 16
+  },
+  {
+    "code": "WDi-09",
+    "name": "WXDi-D09 SUPER DIVA DECK DOUBLE HEROINES",
+    "set_type": "Starter",
+    "release_date": "2022-11-11",
+    "total_cards": 4
+  },
+  {
+    "code": "WXDi-EXD01",
+    "name": "WXDi-EXD01 SUPER DIVA DECK Urith's MIASMA",
+    "set_type": "Starter",
+    "release_date": "2023-07-14",
+    "total_cards": 0
+  },
+  {
+    "code": "WX24-D1",
+    "name": "WX24-D1 WHITE ALT HOPE",
+    "set_type": "Starter",
+    "release_date": "2024-04-27",
+    "total_cards": 16
+  },
+  {
+    "code": "WX24-D2",
+    "name": "WX24-D2 RED ALT AMBITION",
+    "set_type": "Starter",
+    "release_date": "2024-04-27",
+    "total_cards": 13
+  },
+  {
+    "code": "WX24-D3",
+    "name": "WX24-D3 BLUE ALT APPLI",
+    "set_type": "Starter",
+    "release_date": "2024-04-27",
+    "total_cards": 13
+  },
+  {
+    "code": "WX24-D4",
+    "name": "WX24-D4 GREEN ALT WANNA",
+    "set_type": "Starter",
+    "release_date": "2024-04-27",
+    "total_cards": 13
+  },
+  {
+    "code": "WX24-D5",
+    "name": "WX24-D5 BLACK ALT DESIRE",
+    "set_type": "Starter",
+    "release_date": "2024-04-27",
+    "total_cards": 13
+  },
+  {
+    "code": "WX25-CD1",
+    "name": "WX25-CD1 Blue Archive",
+    "set_type": "Starter",
+    "release_date": "2025-04-26",
+    "total_cards": 6
+  },
+  {
+    "code": "WX01",
+    "name": "WX-01 Served Selector",
+    "set_type": "Expansion",
+    "release_date": "2014-04-26",
+    "total_cards": 100
+  },
+  {
+    "code": "WX02",
+    "name": "WX-02 Stirred Selector",
+    "set_type": "Expansion",
+    "release_date": "2014-06-26",
+    "total_cards": 77
+  },
+  {
+    "code": "WX03",
+    "name": "WX-03 Spread Selector",
+    "set_type": "Expansion",
+    "release_date": "2014-08-28",
+    "total_cards": 50
+  },
+  {
+    "code": "WX04",
+    "name": "WX-04 Infected Selector",
+    "set_type": "Expansion",
+    "release_date": "2014-10-23",
+    "total_cards": 105
+  },
+  {
+    "code": "WX05",
+    "name": "WX-05 Beginning Selector",
+    "set_type": "Expansion",
+    "release_date": "2014-12-20",
+    "total_cards": 81
+  },
+  {
+    "code": "WX06",
+    "name": "WX-06 Fortune Selector",
+    "set_type": "Expansion",
+    "release_date": "2015-02-28",
+    "total_cards": 56
+  },
+  {
+    "code": "WX07",
+    "name": "WX-07 Next Selector",
+    "set_type": "Expansion",
+    "release_date": "2015-05-25",
+    "total_cards": 82
+  },
+  {
+    "code": "WX08",
+    "name": "WX-08 Incubate Selector",
+    "set_type": "Expansion",
+    "release_date": "2015-07-16",
+    "total_cards": 85
+  },
+  {
+    "code": "WX09",
+    "name": "WX-09 Reacted Selector",
+    "set_type": "Expansion",
+    "release_date": "2015-09-17",
+    "total_cards": 80
+  },
+  {
+    "code": "WX10",
+    "name": "WX-10 Chained Selector",
+    "set_type": "Expansion",
+    "release_date": "2015-11-19",
+    "total_cards": 105
+  },
+  {
+    "code": "WX11",
+    "name": "WX-11 Destructed Selector",
+    "set_type": "Expansion",
+    "release_date": "2016-01-21",
+    "total_cards": 92
+  },
+  {
+    "code": "WX12",
+    "name": "WX-12 Replied Selector",
+    "set_type": "Expansion",
+    "release_date": "2016-03-17",
+    "total_cards": 86
+  },
+  {
+    "code": "WX13",
+    "name": "WX-13 Unfeigned Selector",
+    "set_type": "Expansion",
+    "release_date": "2016-05-19",
+    "total_cards": 108
+  },
+  {
+    "code": "WX14",
+    "name": "WX-14 Succeed Selector",
+    "set_type": "Expansion",
+    "release_date": "2016-08-04",
+    "total_cards": 90
+  },
+  {
+    "code": "WX15",
+    "name": "WX-15 Incited Selector",
+    "set_type": "Expansion",
+    "release_date": "2016-10-13",
+    "total_cards": 134
+  },
+  {
+    "code": "WX16",
+    "name": "WX-16 Decided Selector",
+    "set_type": "Expansion",
+    "release_date": "2016-12-15",
+    "total_cards": 110
+  },
+  {
+    "code": "WX17",
+    "name": "WX-17 Exposed Selector",
+    "set_type": "Expansion",
+    "release_date": "2017-02-23",
+    "total_cards": 112
+  },
+  {
+    "code": "WX18",
+    "name": "WX-18 Conflated Selector",
+    "set_type": "Expansion",
+    "release_date": "2017-04-26",
+    "total_cards": 122
+  },
+  {
+    "code": "WX19",
+    "name": "WX-19 Unsolved Selector",
+    "set_type": "Expansion",
+    "release_date": "2017-06-19",
+    "total_cards": 115
+  },
+  {
+    "code": "WX20",
+    "name": "WX-20 Connected Selector",
+    "set_type": "Expansion",
+    "release_date": "2017-09-07",
+    "total_cards": 122
+  },
+  {
+    "code": "WX21",
+    "name": "WX-21 Betrayed Selector",
+    "set_type": "Expansion",
+    "release_date": "2017-11-23",
+    "total_cards": 111
+  },
+  {
+    "code": "WX22",
+    "name": "WX-22 Unlocked Selector",
+    "set_type": "Expansion",
+    "release_date": "2018-02-22",
+    "total_cards": 103
+  },
+  {
+    "code": "WXK01",
+    "name": "WXK-P01 Klaxon",
+    "set_type": "Expansion",
+    "release_date": "2018-04-26",
+    "total_cards": 121
+  },
+  {
+    "code": "WXK02",
+    "name": "WXK-P02 Full Scratch",
+    "set_type": "Expansion",
+    "release_date": "2018-06-21",
+    "total_cards": 108
+  },
+  {
+    "code": "WXK03",
+    "name": "WXK-P03 Utopia",
+    "set_type": "Expansion",
+    "release_date": "2018-08-30",
+    "total_cards": 84
+  },
+  {
+    "code": "WXK04",
+    "name": "WXK-P04 Wiles",
+    "set_type": "Expansion",
+    "release_date": "2018-10-25",
+    "total_cards": 104
+  },
+  {
+    "code": "WXK05",
+    "name": "WXK-P05 Rhetoric",
+    "set_type": "Expansion",
+    "release_date": "2018-12-20",
+    "total_cards": 89
+  },
+  {
+    "code": "WXK06",
+    "name": "WXK-P06 Alternative",
+    "set_type": "Expansion",
+    "release_date": "2019-04-20",
+    "total_cards": 93
+  },
+  {
+    "code": "WXK07",
+    "name": "WXK-P07 Explode",
+    "set_type": "Expansion",
+    "release_date": "2019-06-29",
+    "total_cards": 98
+  },
+  {
+    "code": "WXK08",
+    "name": "WXK-P08 Unrealistic",
+    "set_type": "Expansion",
+    "release_date": "2019-08-30",
+    "total_cards": 105
+  },
+  {
+    "code": "WXK09",
+    "name": "WXK-P09 Dissemble",
+    "set_type": "Expansion",
+    "release_date": "2019-10-26",
+    "total_cards": 105
+  },
+  {
+    "code": "WXK10",
+    "name": "WXK-P10 Collision",
+    "set_type": "Expansion",
+    "release_date": "2020-02-22",
+    "total_cards": 122
+  },
+  {
+    "code": "WXK11",
+    "name": "WXK-P11 Re-incarnation",
+    "set_type": "Expansion",
+    "release_date": "2020-05-30",
+    "total_cards": 93
+  },
+  {
+    "code": "WXDi-P00",
+    "name": "WXDi-P00 INTERLUDE DIVA",
+    "set_type": "Expansion",
+    "release_date": "2020-12-05",
+    "total_cards": 90
+  },
+  {
+    "code": "WXDi-P01",
+    "name": "WXDi-P01 GLOWING DIVA",
+    "set_type": "Expansion",
+    "release_date": "2021-01-16",
+    "total_cards": 92
+  },
+  {
+    "code": "WXDi-P02",
+    "name": "WXDi-P02 CHANGING DIVA",
+    "set_type": "Expansion",
+    "release_date": "2021-02-27",
+    "total_cards": 90
+  },
+  {
+    "code": "WXDi-P03",
+    "name": "WXDi-P03 STANDUP DIVA",
+    "set_type": "Expansion",
+    "release_date": "2021-04-03",
+    "total_cards": 90
+  },
+  {
+    "code": "WXDi-P04",
+    "name": "WXDi-P04 VERTEX DIVA",
+    "set_type": "Expansion",
+    "release_date": "2021-06-26",
+    "total_cards": 94
+  },
+  {
+    "code": "WXDi-P05",
+    "name": "WXDi-P05 CURIOSITY DIVA",
+    "set_type": "Expansion",
+    "release_date": "2021-08-28",
+    "total_cards": 93
+  },
+  {
+    "code": "WXDi-P06",
+    "name": "WXDi-P06 WELCOME BACK DIVA ~selector~",
+    "set_type": "Expansion",
+    "release_date": "2021-10-30",
+    "total_cards": 114
+  },
+  {
+    "code": "WXDi-P07",
+    "name": "WXDi-P07 WELCOME BACK DIVA ~Lostorage~ ",
+    "set_type": "Expansion",
+    "release_date": "2021-12-25",
+    "total_cards": 116
+  },
+  {
+    "code": "WXDi-P08",
+    "name": "WXDi-P08 SPREAD DIVA",
+    "set_type": "Expansion",
+    "release_date": "2022-02-26",
+    "total_cards": 101
+  },
+  {
+    "code": "WXDi-P09",
+    "name": "WXDi-P09 CONFLATED DIVA",
+    "set_type": "Expansion",
+    "release_date": "2022-04-29",
+    "total_cards": 110
+  },
+  {
+    "code": "WXDi-P10",
+    "name": "WXDi-P10 PRISMATIC DIVA",
+    "set_type": "Expansion",
+    "release_date": "2022-07-09",
+    "total_cards": 97
+  },
+  {
+    "code": "WXDi-P11",
+    "name": "WXDi-P11 REUNION DIVA",
+    "set_type": "Expansion",
+    "release_date": "2022-10-08",
+    "total_cards": 112
+  },
+  {
+    "code": "WXDi-CP01",
+    "name": "WXDi-CP01 NIJISANJI DIVA",
+    "set_type": "Expansion",
+    "release_date": "2022-12-24",
+    "total_cards": 61
+  },
+  {
+    "code": "WXDi-P12",
+    "name": "WXDi-P12 DISSONANCE DIVA",
+    "set_type": "Expansion",
+    "release_date": "2023-02-11",
+    "total_cards": 104
+  },
+  {
+    "code": "WXDi-P13",
+    "name": "WXDi-P13 CONCORD DIVA",
+    "set_type": "Expansion",
+    "release_date": "2023-04-29",
+    "total_cards": 104
+  },
+  {
+    "code": "WXDi-P14",
+    "name": "WXDi-P14 Fesonne DIVA with Denonbu",
+    "set_type": "Expansion",
+    "release_date": "2023-07-29",
+    "total_cards": 111
+  },
+  {
+    "code": "WXDi-CP02",
+    "name": "WXDi-CP02 Blue Archive DIVA",
+    "set_type": "Expansion",
+    "release_date": "2023-11-04",
+    "total_cards": 109
+  },
+  {
+    "code": "WXDi-P15",
+    "name": "WXDi-P15 DIVISIONS DIVA",
+    "set_type": "Expansion",
+    "release_date": "2023-12-22",
+    "total_cards": 108
+  },
+  {
+    "code": "WXDi-P16",
+    "name": "WXDi-P16 LEGENDARY DIVA",
+    "set_type": "Expansion",
+    "release_date": "2024-02-23",
+    "total_cards": 110
+  },
+  {
+    "code": "WX24-P1",
+    "name": "WX24-P1 Recollect Selector",
+    "set_type": "Expansion",
+    "release_date": "2024-04-27",
+    "total_cards": 100
+  },
+  {
+    "code": "WX24-P2",
+    "name": "WX24-P2 loth Selector",
+    "set_type": "Expansion",
+    "release_date": "2024-07-06",
+    "total_cards": 110
+  },
+  {
+    "code": "WX24-P3",
+    "name": "WX24-P3 Reversal Selector",
+    "set_type": "Expansion",
+    "release_date": "2024-10-12",
+    "total_cards": 110
+  },
+  {
+    "code": "WX24-P4",
+    "name": "WX24-P4 Forth Selector",
+    "set_type": "Expansion",
+    "release_date": "2025-01-31",
+    "total_cards": 130
+  },
+  {
+    "code": "WX25-CP1",
+    "name": "WX25-CP1 Blue Archive Selector",
+    "set_type": "Expansion",
+    "release_date": "2025-04-26",
+    "total_cards": 96
+  },
+  {
+    "code": "WX25-P1",
+    "name": "WX25-P1 Primal Selector",
+    "set_type": "Expansion",
+    "release_date": "2025-07-26",
+    "total_cards": 146
+  },
+  {
+    "code": "WX25-P2",
+    "name": "WX25-P2 Primal Selector",
+    "set_type": "Expansion",
+    "release_date": "2025-10-25",
+    "total_cards": 144
+  },
+  {
+    "code": "WXEX1",
+    "name": "WXEX-1 Unlimited Selector",
+    "set_type": "Expansion",
+    "release_date": "2019-02-14",
+    "total_cards": 79
+  },
+  {
+    "code": "WXEX2",
+    "name": "WXEX-2 Unbreakable Selector",
+    "set_type": "Expansion",
+    "release_date": "2019-12-21",
+    "total_cards": 98
+  },
+  {
+    "code": "SP01",
+    "name": "SP-01 spec selector: Rūko Kominato",
+    "set_type": "Special",
+    "release_date": "2014-08-27",
+    "total_cards": 19
+  },
+  {
+    "code": "SP02",
+    "name": "SP-02 spec selector: Hitoe Uemura",
+    "set_type": "Special",
+    "release_date": "2014-10-22",
+    "total_cards": 17
+  },
+  {
+    "code": "SP03",
+    "name": "SP-03 spec selector: Iona Urazoe",
+    "set_type": "Special",
+    "release_date": "2014-12-19",
+    "total_cards": 18
+  },
+  {
+    "code": "SP04",
+    "name": "SP-04 Everyone's Lottery (LRIGS only)",
+    "set_type": "Special",
+    "release_date": "2014-12-13",
+    "total_cards": 6
+  },
+  {
+    "code": "SP05",
+    "name": "SP-05 selector spread WIXOSS Card Gum ~Collector's Assort~",
+    "set_type": "Special",
+    "release_date": "2014-11-17",
+    "total_cards": 7
+  },
+  {
+    "code": "SP06",
+    "name": "SP-06 spec selector: Akira Aoi",
+    "set_type": "Special",
+    "release_date": "2015-02-25",
+    "total_cards": 19
+  },
+  {
+    "code": "SP07",
+    "name": "SP-07 spec selector: Fumio Futase",
+    "set_type": "Special",
+    "release_date": "2015-02-22",
+    "total_cards": 17
+  },
+  {
+    "code": "SP08",
+    "name": "SP-08 Everyone's Lottery (LRIGS only)",
+    "set_type": "Special",
+    "release_date": "2015-05-30",
+    "total_cards": 5
+  },
+  {
+    "code": "SP09",
+    "name": "SP-09 3D LRIG Cards Set of 5",
+    "set_type": "Special",
+    "release_date": "2015-06-14",
+    "total_cards": 5
+  },
+  {
+    "code": "SP10",
+    "name": "SP-10 Selector's Pack Vol.  Eldora and Yuzuki",
+    "set_type": "Special",
+    "release_date": "2015-06-01",
+    "total_cards": 8
+  },
+  {
+    "code": "SP11",
+    "name": "SP-11 Selector's Pack Vol.  Christmas",
+    "set_type": "Special",
+    "release_date": "2015-11-19",
+    "total_cards": 12
+  },
+  {
+    "code": "SP12",
+    "name": "SP-12 Congratulation Pack",
+    "set_type": "Special",
+    "release_date": "2016-01-01",
+    "total_cards": 16
+  },
+  {
+    "code": "SP13",
+    "name": "SP-13 Selector's Pack New Year Fortune Ver.",
+    "set_type": "Special",
+    "release_date": "2016-01-21",
+    "total_cards": 12
+  },
+  {
+    "code": "SP14",
+    "name": "SP-14 Piruluk Illustration Book",
+    "set_type": "Special",
+    "release_date": "2016-01-01",
+    "total_cards": 2
+  },
+  {
+    "code": "SP15",
+    "name": "SP-15 selector destructed WIXOSS Theater Attendance Cards",
+    "set_type": "Special",
+    "release_date": "2016-02-13",
+    "total_cards": 10
+  },
+  {
+    "code": "SP16",
+    "name": "SP-16 Selector's Pack Party Ver.",
+    "set_type": "Special",
+    "release_date": "2016-04-16",
+    "total_cards": 6
+  },
+  {
+    "code": "SP17",
+    "name": "SP-17 Selector's Pack Vol.  Umr and Tawil",
+    "set_type": "Special",
+    "release_date": "2016-09-10",
+    "total_cards": 6
+  },
+  {
+    "code": "SP18",
+    "name": "SP-18 Summer LRIG Pack Vol.1",
+    "set_type": "Special",
+    "release_date": "2016-08-07",
+    "total_cards": 6
+  },
+  {
+    "code": "SP19",
+    "name": "SP-19 selector destructed WIXOSS Blu-ray and DVD",
+    "set_type": "Special",
+    "release_date": "2016-08-24",
+    "total_cards": 5
+  },
+  {
+    "code": "SP20",
+    "name": "SP-20 Winter LRIG Pack",
+    "set_type": "Special",
+    "release_date": "2016-11-01",
+    "total_cards": 12
+  },
+  {
+    "code": "SP21",
+    "name": "SP-21 Lostorage Tour",
+    "set_type": "Special",
+    "release_date": "2016-11-03",
+    "total_cards": 5
+  },
+  {
+    "code": "SP22",
+    "name": "SP-22 Lostorage League",
+    "set_type": "Special",
+    "release_date": "2016-11-01",
+    "total_cards": 4
+  },
+  {
+    "code": "SP23",
+    "name": "SP-23 spec selector: Suzuko Homura",
+    "set_type": "Special",
+    "release_date": "2016-12-21",
+    "total_cards": 7
+  },
+  {
+    "code": "SP24",
+    "name": "SP-24 spec selector: Chinatsu Morikawa",
+    "set_type": "Special",
+    "release_date": "2017-01-25",
+    "total_cards": 7
+  },
+  {
+    "code": "SP25",
+    "name": "SP-25 Congratulation Pack Vol.3",
+    "set_type": "Special",
+    "release_date": "2017-01-01",
+    "total_cards": 4
+  },
+  {
+    "code": "SP26",
+    "name": "SP-26 Lostorage incited WIXOSS Blu-ray-DVD",
+    "set_type": "Special",
+    "release_date": "2017-02-22",
+    "total_cards": 8
+  },
+  {
+    "code": "SP27",
+    "name": "SP-27 Selector's Pack Vol.15+",
+    "set_type": "Special",
+    "release_date": "2017-04-01",
+    "total_cards": 18
+  },
+  {
+    "code": "SP30",
+    "name": "SP-30 Congratulation Pack Vol.4",
+    "set_type": "Special",
+    "release_date": "2017-03-04",
+    "total_cards": 9
+  },
+  {
+    "code": "SP31",
+    "name": "SP-31 Congratulation Pack Vol.5+",
+    "set_type": "Special",
+    "release_date": "2017-05-01",
+    "total_cards": 9
+  },
+  {
+    "code": "SP32",
+    "name": "SP-32 Selector Selection",
+    "set_type": "Special",
+    "release_date": "2017-12-14",
+    "total_cards": 37
+  },
+  {
+    "code": "SP33",
+    "name": "SP-33 Base LRIG Campaign",
+    "set_type": "Special",
+    "release_date": "2017-12-14",
+    "total_cards": 37
+  },
+  {
+    "code": "SP34",
+    "name": "SP-34 WIXOSS Limited supply set Vol.2+3",
+    "set_type": "Special",
+    "release_date": "2017-08-06",
+    "total_cards": 16
+  },
+  {
+    "code": "SP35",
+    "name": "SP-35 2019 Valentine's Pack",
+    "set_type": "Special",
+    "release_date": "2019-02-14",
+    "total_cards": 28
+  },
+  {
+    "code": "SP36",
+    "name": "SP-36 5th ANNIVERSARY 5 Strong Promo Cards",
+    "set_type": "Special",
+    "release_date": "2019-10-30",
+    "total_cards": 5
+  },
+  {
+    "code": "SP37",
+    "name": "SP-37 Legend ARTS Pack",
+    "set_type": "Special",
+    "release_date": "2019-12-21",
+    "total_cards": 6
+  },
+  {
+    "code": "SP38",
+    "name": "SP38 WIXOSS 10th Anniversary Book",
+    "set_type": "Special",
+    "release_date": "2024-07-028",
+    "total_cards": 8
+  },
+  {
+    "code": "SPK01",
+    "name": "SPK-01 WIXOSS Party Pack",
+    "set_type": "Special",
+    "release_date": "2018-04-26",
+    "total_cards": 15
+  },
+  {
+    "code": "SPK02",
+    "name": "SPK-02 Congratulation Card",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 23
+  },
+  {
+    "code": "SPK04",
+    "name": "SPK-04 Wedding LRIG (Congratulation)",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 23
+  },
+  {
+    "code": "SPK05",
+    "name": "SPK-05 Akihabara Collaboration Campaign and Seal Rally",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 10
+  },
+  {
+    "code": "SPK06",
+    "name": "SPK-06 Lostorage conflated WIXOSS Blu-ray+DVD",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 6
+  },
+  {
+    "code": "SPK07",
+    "name": "SPK-07 Tanabata LRIG Pack",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 8
+  },
+  {
+    "code": "SPK08",
+    "name": "SPK-08 Halloween LRIG Cards",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 12
+  },
+  {
+    "code": "SPK09",
+    "name": "SPK-09 Christmas LRIG Cards",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 12
+  },
+  {
+    "code": "SPK10",
+    "name": "SPK-10 WIXOSS Cup 2018 Participation Awards",
+    "set_type": "Special",
+    "release_date": "2018-12-28",
+    "total_cards": 4
+  },
+  {
+    "code": "SPK11",
+    "name": "SPK-11 WIXOSS Cup 2018 Top Prizes",
+    "set_type": "Special",
+    "release_date": "2018-12-28",
+    "total_cards": 4
+  },
+  {
+    "code": "SPK13",
+    "name": "SPK-13 Variable LRIG Pack",
+    "set_type": "Special",
+    "release_date": "2019",
+    "total_cards": 4
+  },
+  {
+    "code": "SPK14",
+    "name": "SPK-14 Marathon LRIG Pack (2019 Ver.)/WIXOSS Great Thanksgiving Promo Card",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 6
+  },
+  {
+    "code": "SPK15",
+    "name": "SPK-15 Welcome LRIG Pack",
+    "set_type": "Special",
+    "release_date": "2018",
+    "total_cards": 6
+  },
+  {
+    "code": "SPK16",
+    "name": "SPK-16 Season Level 0 LRIGs",
+    "set_type": "Special",
+    "release_date": "2019",
+    "total_cards": 53
+  },
+  {
+    "code": "SPK18",
+    "name": "SPK-18 School Trip LRIG Pack 2019",
+    "set_type": "Special",
+    "release_date": "2019",
+    "total_cards": 5
+  },
+  {
+    "code": "SPK19",
+    "name": "SPK-19 Summer Vacation Pack",
+    "set_type": "Special",
+    "release_date": "2019",
+    "total_cards": 6
+  },
+  {
+    "code": "SPK22",
+    "name": "SPK-22 LRIG Comes to You!? Campaign Part 9",
+    "set_type": "Special",
+    "release_date": "2019-11-07",
+    "total_cards": 9
+  },
+  {
+    "code": "SPK23",
+    "name": "SPK-23 WIXOSS Limited supply set Nijisanji vol.2",
+    "set_type": "Special",
+    "release_date": "2019-11-07",
+    "total_cards": 24
+  },
+  {
+    "code": "SPK24",
+    "name": "SPK-24 WIXOSS Limited supply set Nijisanji vol.3",
+    "set_type": "Special",
+    "release_date": "2019-11-07",
+    "total_cards": 16
+  },
+  {
+    "code": "SPK25",
+    "name": "SPK-25 Lv.1 Coin LRIGs",
+    "set_type": "Special",
+    "release_date": "2022-01-07",
+    "total_cards": 5
+  },
+  {
+    "code": "SPDi01",
+    "name": "Chibi LRIG Level 0",
+    "set_type": "Special",
+    "release_date": "2020-11-01",
+    "total_cards": 128
+  },
+  {
+    "code": "SPDi01S",
+    "name": "Chibi LRIG Level 0 Secret Congratulations",
+    "set_type": "Special",
+    "release_date": "2020-11-01",
+    "total_cards": 37
+  },
+  {
+    "code": "SPDi02",
+    "name": "WIXOSS CEREMONY Gift PR Cards ",
+    "set_type": "Special",
+    "release_date": "2020-11-01",
+    "total_cards": 24
+  },
+  {
+    "code": "SPDi03",
+    "name": "LRIG Comes DIVA Debut Campaign ",
+    "set_type": "Special",
+    "release_date": "2021-01-01",
+    "total_cards": 19
+  },
+  {
+    "code": "SPDi04",
+    "name": "No Limit Xmas Present Campaign ",
+    "set_type": "Special",
+    "release_date": "2020-12-24",
+    "total_cards": 3
+  },
+  {
+    "code": "SPDi05",
+    "name": "Valentine's Choco LRIGs DIVA Ver.",
+    "set_type": "Special",
+    "release_date": "2021-02-08",
+    "total_cards": 5
+  },
+  {
+    "code": "SPDi06",
+    "name": "WIXOSS DIVA (A) LIVE WIXOSS Archive Exhibition",
+    "set_type": "Special",
+    "release_date": "2021-03-27",
+    "total_cards": 3
+  },
+  {
+    "code": "SPDi07",
+    "name": "WIXOSS DIVA (A) LIVE Blu-ray BOX First Edition Limited Privileges",
+    "set_type": "Special",
+    "release_date": "2021-06-26",
+    "total_cards": 11
+  },
+  {
+    "code": "SPDi08",
+    "name": "Diva Special Sign Pack Vol.3",
+    "set_type": "Special",
+    "release_date": "2021-06-26",
+    "total_cards": 0
+  },
+  {
+    "code": "SPDi08S",
+    "name": "Diva Special Sign Pack Vol.3 Special",
+    "set_type": "Special",
+    "release_date": "2021-06-26",
+    "total_cards": 1
+  },
+  {
+    "code": "SPDi09",
+    "name": "Duel Masters Play's × WIXOSS Collaboration Commemoration Campaign",
+    "set_type": "Special",
+    "release_date": "2021-04-01",
+    "total_cards": 4
+  },
+  {
+    "code": "SPDi10",
+    "name": "Selector Point System Limited Special PR Cards ",
+    "set_type": "Special",
+    "release_date": "2021-08-01",
+    "total_cards": 16
+  },
+  {
+    "code": "SPDi11",
+    "name": "Wixoss TCG DIVA Hot Spring LRIG Pack",
+    "set_type": "Special",
+    "release_date": "2021-08-21",
+    "total_cards": 7
+  },
+  {
+    "code": "SPDi12",
+    "name": "Special Servant Pack",
+    "set_type": "Special",
+    "release_date": "2021-08-21",
+    "total_cards": 6
+  },
+  {
+    "code": "SPDi13",
+    "name": "Wixoss TCG x Karaoke PASELA Collaboration",
+    "set_type": "Special",
+    "release_date": "2021-08-21",
+    "total_cards": 3
+  },
+  {
+    "code": "SPDi14",
+    "name": "Wixoss TCG DIVA Hot Spring LRIG Pack Part 2",
+    "set_type": "Special",
+    "release_date": "2021-11-01",
+    "total_cards": 7
+  },
+  {
+    "code": "SPDi15",
+    "name": "Present from LRIG Christmas Campaign",
+    "set_type": "Special",
+    "release_date": "2021-12-01",
+    "total_cards": 4
+  },
+  {
+    "code": "SPDi16",
+    "name": "Princess Letters Collaboration",
+    "set_type": "Special",
+    "release_date": "2022-01-01",
+    "total_cards": 3
+  },
+  {
+    "code": "SPDi17",
+    "name": "Omokoro Project:  Mother's Portrait Cards",
+    "set_type": "Special",
+    "release_date": "2022-04-29",
+    "total_cards": 3
+  },
+  {
+    "code": "SPDi18",
+    "name": "WIXOSS Limited supply set - Shigure Ui ver. 3",
+    "set_type": "Special",
+    "release_date": "2022-03-26",
+    "total_cards": 8
+  },
+  {
+    "code": "SPDi20",
+    "name": "Special Servant # Pack",
+    "set_type": "Special",
+    "release_date": "2022-04-29",
+    "total_cards": 6
+  },
+  {
+    "code": "SPDi21",
+    "name": "WIXOSS 8th Anniversary Special Event",
+    "set_type": "Special",
+    "release_date": "2022-04-26",
+    "total_cards": 8
+  },
+  {
+    "code": "SPDi22",
+    "name": "Lurikuru DIVA Campaign Part 4 (EN)",
+    "set_type": "Special",
+    "release_date": "2022-12-16",
+    "total_cards": 29
+  },
+  {
+    "code": "SPDi23",
+    "name": "Comiket 100 Lv0 LRIGs",
+    "set_type": "Special",
+    "release_date": "2022-08-13",
+    "total_cards": 17
+  },
+  {
+    "code": "SPDi24",
+    "name": "LRIG Christmas Campaign 2022",
+    "set_type": "Special",
+    "release_date": "2022-12-01",
+    "total_cards": 4
+  },
+  {
+    "code": "SPDi25",
+    "name": "Chocolate LRIG Pack Dissona ver.",
+    "set_type": "Special",
+    "release_date": "2023-02-01",
+    "total_cards": 5
+  },
+  {
+    "code": "SPDi26",
+    "name": "WIXOSS 9th Anniversary SP Pack",
+    "set_type": "Special",
+    "release_date": "2023-02-01",
+    "total_cards": 10
+  },
+  {
+    "code": "SPDi27",
+    "name": "Dissona Special Pack",
+    "set_type": "Special",
+    "release_date": "2023-03-01",
+    "total_cards": 5
+  },
+  {
+    "code": "SPDi28",
+    "name": "Fesonne DIVA with Denonbu Box Promos",
+    "set_type": "Special",
+    "release_date": "2023-07-29",
+    "total_cards": 5
+  },
+  {
+    "code": "SPDi29",
+    "name": "Denonbu x WIXOSS",
+    "set_type": "Special",
+    "release_date": "2023-07-29",
+    "total_cards": 3
+  },
+  {
+    "code": "SPDi30",
+    "name": "Arona Special Servant Pack",
+    "set_type": "Special",
+    "release_date": "2023-11-03",
+    "total_cards": 1
+  },
+  {
+    "code": "SPDi31",
+    "name": "Blue Archive DIVA Sensei Selector Shop Meeting",
+    "set_type": "Special",
+    "release_date": "2023-11-03",
+    "total_cards": 8
+  },
+  {
+    "code": "SPDi32",
+    "name": "Blue Archive DIVA Only! WIXOSS Special Event",
+    "set_type": "Special",
+    "release_date": "2023-11-03",
+    "total_cards": 0
+  },
+  {
+    "code": "SPDi33",
+    "name": "Special Servant # Pack Vol.2",
+    "set_type": "Special",
+    "release_date": "2023-12-23",
+    "total_cards": 6
+  },
+  {
+    "code": "SPDi34",
+    "name": "WIXOSS Dream LRIG Pack",
+    "set_type": "Special",
+    "release_date": "2024-02-24",
+    "total_cards": 27
+  },
+  {
+    "code": "SPDi35",
+    "name": "Duel Masters Play's Collab",
+    "set_type": "Special",
+    "release_date": "2024-03-24",
+    "total_cards": 3
+  },
+  {
+    "code": "SPDi36",
+    "name": "10th Anniversary Key Visual Lv0",
+    "set_type": "Special",
+    "release_date": "2024-04-27",
+    "total_cards": 5
+  },
+  {
+    "code": "SPDi37",
+    "name": "WIXOSS PARTY 2024",
+    "set_type": "Special",
+    "release_date": "2024-04-27",
+    "total_cards": 9
+  },
+  {
+    "code": "SPDi39",
+    "name": "High Speed Etoile Collaboration Celebration",
+    "set_type": "Special",
+    "release_date": "2024-04-27",
+    "total_cards": 3
+  },
+  {
+    "code": "SPDi42",
+    "name": "Wedding LRIG Pack 2025 vol.1",
+    "set_type": "Special",
+    "release_date": "2025-07-26",
+    "total_cards": 12
+  },
+  {
+    "code": "SPDi43",
+    "name": "DIVA LRIG Pack: Kyurukyurun☆ and DXM",
+    "set_type": "Special",
+    "release_date": "2025-07-26",
+    "total_cards": 22
+  },
+  {
+    "code": "SPDi44",
+    "name": "VOICE ACROSS Special Pack",
+    "set_type": "Special",
+    "release_date": "2025-07-26",
+    "total_cards": 17
+  },
+  {
+    "code": "SPDi45",
+    "name": "WIXOSS PARTY PR Pack",
+    "set_type": "Special",
+    "release_date": "2025-10-25",
+    "total_cards": 6
+  },
+  {
+    "code": "PR",
+    "name": "Promos",
+    "set_type": "Promotional",
+    "release_date": null,
+    "total_cards": 488
+  },
+  {
+    "code": "PREN",
+    "name": "English Promos",
+    "set_type": "Promotional",
+    "release_date": null,
+    "total_cards": 21
+  },
+  {
+    "code": "WXP",
+    "name": "WXP-01 Pink Gauntlet",
+    "set_type": "Special",
+    "release_date": "2015-10-12",
+    "total_cards": 18
+  },
+  {
+    "code": "WXP02",
+    "name": "Wixoss Expo 2016",
+    "set_type": "Special",
+    "release_date": "2016-08-07",
+    "total_cards": 18
+  },
+  {
+    "code": "WXP03",
+    "name": "Wixoss Expo 2017",
+    "set_type": "Special",
+    "release_date": "2017-08-06",
+    "total_cards": 18
+  },
+  {
+    "code": "",
+    "name": "",
+    "set_type": "",
+    "release_date": null,
+    "total_cards": 0
+  }
+]
