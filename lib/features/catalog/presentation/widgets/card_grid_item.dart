@@ -1,64 +1,121 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../../core/providers/cards_provider.dart';
+import '../../../../core/providers/database_provider.dart';
 import '../../../../data/database/app_database.dart' as db;
 
-class CardGridItem extends StatelessWidget {
+class CardGridItem extends ConsumerWidget {
   final db.Card card;
+  final int quantity;
+  final bool isOwned;
 
-  const CardGridItem({super.key, required this.card});
+  const CardGridItem({
+    super.key,
+    required this.card,
+    this.quantity = 0,
+    this.isOwned = false,
+  });
 
-  /// Get the local asset path for the card image
   String get _imagePath {
-    // Image stored as: assets/cards/{set_code}/{card_id}.webp
     return 'assets/cards/${card.setCode}/${card.id}.webp';
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return GestureDetector(
-      onTap: () {
-        // TODO: Navigate to card detail
-        _showCardDetail(context);
-      },
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 4,
-              offset: const Offset(0, 2),
+      onTap: () => _showCardDetail(context, ref),
+      onLongPress: () => _toggleCollection(context, ref),
+      child: Stack(
+        children: [
+          // Card image
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.1),
+                  blurRadius: 4,
+                  offset: const Offset(0, 2),
+                ),
+              ],
             ),
-          ],
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(8),
-          child: Image.asset(
-            _imagePath,
-            fit: BoxFit.cover,
-            errorBuilder: (context, error, stackTrace) {
-              // Fallback if image not found
-              return Container(
-                color: _getColorForCard(),
-                child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(4),
-                    child: Text(
-                      card.name,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 10,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
-                    ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: ColorFiltered(
+                colorFilter: isOwned
+                    ? const ColorFilter.mode(Colors.transparent, BlendMode.multiply)
+                    : ColorFilter.mode(Colors.grey.shade600, BlendMode.saturation),
+                child: Opacity(
+                  opacity: isOwned ? 1.0 : 0.5,
+                  child: Image.asset(
+                    _imagePath,
+                    fit: BoxFit.cover,
+                    errorBuilder: (context, error, stackTrace) {
+                      return Container(
+                        color: _getColorForCard(),
+                        child: Center(
+                          child: Padding(
+                            padding: const EdgeInsets.all(4),
+                            child: Text(
+                              card.name,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: isOwned ? Colors.white : Colors.white70,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              maxLines: 3,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 ),
-              );
-            },
+              ),
+            ),
           ),
-        ),
+          // Quantity badge
+          if (quantity > 0)
+            Positioned(
+              top: 4,
+              right: 4,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(
+                  color: Colors.green.shade600,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  'x$quantity',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 11,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+          // Not owned indicator
+          if (!isOwned)
+            Positioned(
+              bottom: 4,
+              right: 4,
+              child: Container(
+                padding: const EdgeInsets.all(4),
+                decoration: BoxDecoration(
+                  color: Colors.black54,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: const Icon(
+                  Icons.add,
+                  color: Colors.white,
+                  size: 16,
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }
@@ -80,7 +137,39 @@ class CardGridItem extends StatelessWidget {
     }
   }
 
-  void _showCardDetail(BuildContext context) {
+  Future<void> _toggleCollection(BuildContext context, WidgetRef ref) async {
+    final database = ref.read(databaseProvider);
+
+    if (isOwned) {
+      // Remove from collection
+      await database.setCollectionQuantity(card.id, 0);
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('${card.name} retiré de la collection'),
+            duration: const Duration(seconds: 1),
+          ),
+        );
+      }
+    } else {
+      // Add to collection
+      await database.setCollectionQuantity(card.id, 1);
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('${card.name} ajouté à la collection'),
+            duration: const Duration(seconds: 1),
+            backgroundColor: Colors.green,
+          ),
+        );
+      }
+    }
+
+    // Refresh collection
+    ref.invalidate(collectionMapProvider);
+  }
+
+  void _showCardDetail(BuildContext context, WidgetRef ref) {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -141,6 +230,9 @@ class CardGridItem extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const SizedBox(height: 16),
+                  // Collection controls
+                  _CollectionControls(card: card, ref: ref),
                   const SizedBox(height: 16),
                   // Card name
                   Text(
@@ -212,5 +304,84 @@ class CardGridItem extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class _CollectionControls extends ConsumerWidget {
+  final db.Card card;
+  final WidgetRef parentRef;
+
+  const _CollectionControls({required this.card, required WidgetRef ref}) : parentRef = ref;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final collectionAsync = ref.watch(collectionMapProvider);
+
+    return collectionAsync.when(
+      data: (collection) {
+        final qty = collection[card.id] ?? 0;
+        final isOwned = qty > 0;
+
+        return Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: isOwned ? Colors.green.shade50 : Colors.grey.shade100,
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: isOwned ? Colors.green.shade200 : Colors.grey.shade300,
+            ),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              if (isOwned) ...[
+                IconButton(
+                  onPressed: () => _updateQuantity(ref, qty - 1),
+                  icon: const Icon(Icons.remove_circle_outline),
+                  color: qty > 1 ? Colors.orange : Colors.red,
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text(
+                    '$qty',
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                IconButton(
+                  onPressed: () => _updateQuantity(ref, qty + 1),
+                  icon: const Icon(Icons.add_circle_outline),
+                  color: Colors.green,
+                ),
+              ] else ...[
+                ElevatedButton.icon(
+                  onPressed: () => _updateQuantity(ref, 1),
+                  icon: const Icon(Icons.add),
+                  label: const Text('Ajouter à ma collection'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                    foregroundColor: Colors.white,
+                  ),
+                ),
+              ],
+            ],
+          ),
+        );
+      },
+      loading: () => const CircularProgressIndicator(),
+      error: (e, _) => Text('Erreur: $e'),
+    );
+  }
+
+  Future<void> _updateQuantity(WidgetRef ref, int newQty) async {
+    final database = ref.read(databaseProvider);
+    await database.setCollectionQuantity(card.id, newQty);
+    ref.invalidate(collectionMapProvider);
   }
 }
