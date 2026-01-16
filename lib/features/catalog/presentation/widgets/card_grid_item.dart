@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:photo_view/photo_view.dart';
 import '../../../../core/providers/cards_provider.dart';
 import '../../../../core/providers/database_provider.dart';
 import '../../../../data/database/app_database.dart' as db;
+import '../../../../domain/entities/card.dart';
 
 class CardGridItem extends ConsumerWidget {
   final db.Card card;
@@ -76,25 +78,32 @@ class CardGridItem extends ConsumerWidget {
               ),
             ),
           ),
-          // Quantity badge
+          // Quantity badge with target
           if (quantity > 0)
             Positioned(
               top: 4,
               right: 4,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                decoration: BoxDecoration(
-                  color: Colors.green.shade600,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Text(
-                  'x$quantity',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 11,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+              child: Builder(
+                builder: (context) {
+                  final cardType = CardType.fromString(card.cardType);
+                  final target = cardType.targetCount;
+                  final isComplete = quantity >= target;
+                  return Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: isComplete ? Colors.green.shade600 : Colors.orange.shade600,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      '$quantity/$target',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 11,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
           // Not owned indicator
@@ -202,31 +211,54 @@ class CardGridItem extends ConsumerWidget {
                       ),
                     ),
                   ),
-                  // Card image
+                  // Card image (tap to zoom)
                   Center(
-                    child: Container(
-                      constraints: const BoxConstraints(maxWidth: 300),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(12),
-                        child: Image.asset(
-                          _imagePath,
-                          fit: BoxFit.contain,
-                          errorBuilder: (context, error, stackTrace) {
-                            return Container(
-                              height: 400,
-                              color: _getColorForCard(),
-                              child: Center(
-                                child: Text(
-                                  card.name,
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 18,
-                                  ),
-                                ),
+                    child: GestureDetector(
+                      onTap: () => _showFullScreenImage(context),
+                      child: Stack(
+                        alignment: Alignment.bottomRight,
+                        children: [
+                          Container(
+                            constraints: const BoxConstraints(maxWidth: 300),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(12),
+                              child: Image.asset(
+                                _imagePath,
+                                fit: BoxFit.contain,
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Container(
+                                    height: 400,
+                                    color: _getColorForCard(),
+                                    child: Center(
+                                      child: Text(
+                                        card.name,
+                                        style: const TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 18,
+                                        ),
+                                      ),
+                                    ),
+                                  );
+                                },
                               ),
-                            );
-                          },
-                        ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8),
+                            child: Container(
+                              padding: const EdgeInsets.all(6),
+                              decoration: BoxDecoration(
+                                color: Colors.black54,
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: const Icon(
+                                Icons.zoom_in,
+                                color: Colors.white,
+                                size: 20,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -285,6 +317,48 @@ class CardGridItem extends ConsumerWidget {
     );
   }
 
+  void _showFullScreenImage(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => Scaffold(
+          backgroundColor: Colors.black,
+          appBar: AppBar(
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            leading: IconButton(
+              icon: const Icon(Icons.close, color: Colors.white),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+            title: Text(
+              card.name,
+              style: const TextStyle(color: Colors.white),
+            ),
+          ),
+          extendBodyBehindAppBar: true,
+          body: PhotoView(
+            imageProvider: AssetImage(_imagePath),
+            minScale: PhotoViewComputedScale.contained,
+            maxScale: PhotoViewComputedScale.covered * 3,
+            backgroundDecoration: const BoxDecoration(color: Colors.black),
+            errorBuilder: (context, error, stackTrace) {
+              return Center(
+                child: Container(
+                  padding: const EdgeInsets.all(32),
+                  color: _getColorForCard(),
+                  child: Text(
+                    card.name,
+                    style: const TextStyle(color: Colors.white, fontSize: 24),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
+
   Widget _buildInfoRow(String label, String value) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 2),
@@ -316,60 +390,111 @@ class _CollectionControls extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final collectionAsync = ref.watch(collectionMapProvider);
+    final cardType = CardType.fromString(card.cardType);
+    final target = cardType.targetCount;
 
     return collectionAsync.when(
       data: (collection) {
         final qty = collection[card.id] ?? 0;
         final isOwned = qty > 0;
+        final isComplete = qty >= target;
 
         return Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: isOwned ? Colors.green.shade50 : Colors.grey.shade100,
+            color: isComplete
+                ? Colors.green.shade50
+                : isOwned
+                    ? Colors.orange.shade50
+                    : Colors.grey.shade100,
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
-              color: isOwned ? Colors.green.shade200 : Colors.grey.shade300,
+              color: isComplete
+                  ? Colors.green.shade200
+                  : isOwned
+                      ? Colors.orange.shade200
+                      : Colors.grey.shade300,
             ),
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Column(
             children: [
-              if (isOwned) ...[
-                IconButton(
-                  onPressed: () => _updateQuantity(ref, qty - 1),
-                  icon: const Icon(Icons.remove_circle_outline),
-                  color: qty > 1 ? Colors.orange : Colors.red,
-                ),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8),
+              // Target indicator
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Text(
+                  'Objectif: $target (${cardType.displayName})',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.grey.shade600,
+                    fontWeight: FontWeight.w500,
                   ),
-                  child: Text(
-                    '$qty',
-                    style: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  if (isOwned) ...[
+                    IconButton(
+                      onPressed: () => _updateQuantity(ref, qty - 1),
+                      icon: const Icon(Icons.remove_circle_outline),
+                      color: qty > 1 ? Colors.orange : Colors.red,
                     ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: isComplete ? Colors.green : Colors.orange,
+                          width: 2,
+                        ),
+                      ),
+                      child: Text(
+                        '$qty / $target',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: isComplete ? Colors.green.shade700 : Colors.orange.shade700,
+                        ),
+                      ),
+                    ),
+                    IconButton(
+                      onPressed: () => _updateQuantity(ref, qty + 1),
+                      icon: const Icon(Icons.add_circle_outline),
+                      color: Colors.green,
+                    ),
+                  ] else ...[
+                    ElevatedButton.icon(
+                      onPressed: () => _updateQuantity(ref, 1),
+                      icon: const Icon(Icons.add),
+                      label: const Text('Ajouter à ma collection'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.green,
+                        foregroundColor: Colors.white,
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+              if (isComplete)
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.check_circle, color: Colors.green.shade600, size: 16),
+                      const SizedBox(width: 4),
+                      Text(
+                        'Collection complète !',
+                        style: TextStyle(
+                          color: Colors.green.shade600,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                IconButton(
-                  onPressed: () => _updateQuantity(ref, qty + 1),
-                  icon: const Icon(Icons.add_circle_outline),
-                  color: Colors.green,
-                ),
-              ] else ...[
-                ElevatedButton.icon(
-                  onPressed: () => _updateQuantity(ref, 1),
-                  icon: const Icon(Icons.add),
-                  label: const Text('Ajouter à ma collection'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
-                    foregroundColor: Colors.white,
-                  ),
-                ),
-              ],
             ],
           ),
         );

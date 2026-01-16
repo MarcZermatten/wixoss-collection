@@ -118,6 +118,45 @@ enum CardType {
       orElse: () => CardType.unknown,
     );
   }
+
+  /// Target collection count per card type
+  /// SIGNI: 5x, LRIG: 2x, others: 1x
+  int get targetCount {
+    switch (this) {
+      case CardType.signi:
+        return 5;
+      case CardType.lrig:
+        return 2;
+      default:
+        return 1;
+    }
+  }
+
+  /// Display name in French
+  String get displayName {
+    switch (this) {
+      case CardType.lrig:
+        return 'LRIG';
+      case CardType.signi:
+        return 'SIGNI';
+      case CardType.spell:
+        return 'Spell';
+      case CardType.arts:
+        return 'Arts';
+      case CardType.resona:
+        return 'Resona';
+      case CardType.piece:
+        return 'Piece';
+      case CardType.key:
+        return 'Key';
+      case CardType.assist:
+        return 'Assist';
+      case CardType.token:
+        return 'Token';
+      case CardType.unknown:
+        return 'Inconnu';
+    }
+  }
 }
 
 /// Wixoss colors
